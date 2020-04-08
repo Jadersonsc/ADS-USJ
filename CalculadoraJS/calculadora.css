@@ -1,0 +1,12 @@
+body, button {
+	font-style: oblique;
+	color: #008000;
+	
+}
+fieldset {
+    border: 2px #af3333 solid;
+    border-radius: 10px;
+    background-color: rgb(203, 179, 226);
+    position:relative; height:100%;  float: center;  width:400px;
+    margin: 0 auto;
+ }   

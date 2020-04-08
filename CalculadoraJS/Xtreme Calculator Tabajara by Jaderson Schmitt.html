@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora</title>
+<link rel="stylesheet" type="text/css" href= "calculadora.css"/>
+
+</head>
+<body>
+    <fieldset>
+    <h1>XTREME CALCULATOR TABAJARA</h1>
+    <div>
+        <label for="primeiroNumero">Insira o primeiro Numero</label>
+        <input type="text" id="primeiroNumero"/>   
+    </div>
+    <br>
+    <div>
+        <label for="segundoNumero">Insira o segundo Numero</label>
+        <input type="text" id="segundoNumero"/>   
+    </div>
+    <br>
+    <div>
+        <button onclick="somar()">Somar</button>
+        <button onclick="subtrair()">Subtrair</button>
+        <button onclick="multiplica()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+        <button onclick="limpar()">Limpar</button>
+        
+    </div>
+    <br>
+    <div>
+        <label for="resultado">Resultado</label>
+        <input type="text" id="resultado"/>
+    </div>
+
+    <script>
+        function somar(){
+            var n1 = +document.getElementById('primeiroNumero').value;
+            var n2 = +document.getElementById('segundoNumero').value;
+            var resultado = document.getElementById('resultado');
+            resultado.value = n1 + n2;
+        }
+        function subtrair(){
+            var n3 = +document.getElementById('primeiroNumero').value;
+            var n4 = +document.getElementById('segundoNumero').value;
+            var resultado = document.getElementById('resultado');
+            resultado.value = n3 - n4;
+        }
+            function multiplica(){
+            var n5 = +document.getElementById('primeiroNumero').value;
+            var n6 = +document.getElementById('segundoNumero').value;
+            var resultado = document.getElementById('resultado');
+            resultado.value = n5 * n6;
+        }
+        function dividir(){
+            var n7 = +document.getElementById('primeiroNumero').value;
+            var n8 = +document.getElementById('segundoNumero').value;
+            var resultado = document.getElementById('resultado');
+            resultado.value = n7 / n8;
+        }
+        function limpar(){
+            document.getElementById('resultado').value = '';
+            document.getElementById('primeiroNumero').value = '';
+            document.getElementById('segundoNumero').value = '';
+        }
+    </script><hr>
+
+    <img src="https://i0.wp.com/bailedosenxutos.com/wp-content/uploads/2016/05/Deadpool-e-homem-Aranha.gif"/>
+</fieldset>
+</body>
+</html>
