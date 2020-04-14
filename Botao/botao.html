@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .pulse{
+            height: 500px;
+            width: 500px;
+            background: rgba(69, 39, 160, 1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            animation: pulse 1.5s linear infinite;
+        }
+        @keyframes pulse {
+            0%{
+                box-shadow: 0 0 0 0 rgba(69, 39, 160, 1);
+            }
+            100% {
+                box-shadow: 0 0 0 70px rgba(69, 39, 160, 0);
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="pulse">PULSE</div>
+    </body>
+</html>
