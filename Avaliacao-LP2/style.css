@@ -1,0 +1,33 @@
+fieldset {
+    border: 2px #0cf072 solid;
+    border-radius: 20px;
+    background-color: #0dd8f3;
+    position:relative; height:100%;  float: center;  width:650px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+
+section {
+    font-size: 25px;
+    width:50px; 
+    line-height: 50px;
+    text-align: center;
+    position:relative; height:100%;  float: center;  width:650px;
+    
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+input {
+    display: inline-block;
+    
+}
+label {
+    text-align: center;
+}

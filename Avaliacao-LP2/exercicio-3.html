@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta nome="viewport" content="width=device-width">
+    <title>Exercicio-3</title>
+    <link rel="stylesheet" type="text/css" href= "style.css"/>
+    </head>
+    <body>
+        <fieldset>
+            <h1>Gerador de Números Para Loteria!</h1>
+           
+              <section>
+                <label for="primeiroNumero">1º Número</label>
+                <input type="text" id="sort1" name="primeiroNumero"><br>
+                
+                <label for="segundoNumero">2º Número</label>
+                <input type="text" id="sort2" name="segundoNumero"><br>
+                
+                <label for="terceiroNumero">3º Número</label>
+                <input type="text" id="sort3" name="terceiroNumero"><br>
+
+                <label for="quartoNumero">4º Número</label>
+                <input type="text" id="sort4" name="quartoNumero"><br>
+
+                <label for="quintoNumero">5º Número</label>
+                <input type="text" id="sort5" name="quintoNumero"><br>
+                
+                <label for="sextoNumero">6º Número</label>
+                <input type="text" id="sort6" name="sextoNumero"><br>
+
+                <label for="resultado">Resultado</label>
+                <input type="text" id="resultado"/>
+
+                <input type="button" onclick="sorteio()" value="Gerar Números" id="btn">
+
+                <br>
+                <script>
+                    function sorteio(){
+
+                    var sort1 = Math.round(Math.random()*60);
+                    var sort2 = Math.round(Math.random()*60);
+                    var sort3 = Math.round(Math.random()*60);
+                    var sort4 = Math.round(Math.random()*60);
+                    var sort5 = Math.round(Math.random()*60);
+                    var sort6 = Math.round(Math.random()*60);
+
+                    var resultado = document.getElementById('resultado');
+                    resultado.value = (sort1);
+
+                    
+
+                    }
+                </script>
+                
+            </section> 
+            
+
+            <br><hr>
+
+            <a href="exercicio-1.html">Tela Inicial</a> 
+
+        </fieldset>
+        
+    </body>
+</html>

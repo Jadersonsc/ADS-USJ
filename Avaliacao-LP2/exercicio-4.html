@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta nome="viewport" content="width=device-width">
+    <title>Exercicio-4</title>
+    <link rel="stylesheet" type="text/css" href= "style.css"/>
+    </head>
+    <body><fieldset>
+        <h1>Gerador de Atividades</h1>
+
+        <input type="text" id="atividade">
+        <button id="btn">Acrescentar</button>
+
+        <ul>
+            
+            
+        </ul>
+                
+        <script>
+    var $lista = document.querySelector('ul');
+    var $atividade = document.querySelector('#atividade');
+    var $botao = document.querySelector('#btn');
+
+    $botao.addEventListener('click', addAtividade);
+
+    function addAtividade() {
+        var item = '<li>' + $atividade.value + '</li>';
+        $lista.innerHTML += item;
+        $atividade.value = '';
+        $atividade.focus();
+    }
+    $atividade.addEventListener('keyup', function(e){
+        if (e.keyCode === 13) {
+            addAtividade()
+        }
+    })
+            
+    function limpar(){
+                document.getElementById("msg").value = '';
+    } 
+
+</script>
+<hr>
+            <a href="exercicio-1.html">Tela Inicial</a> 
+        </fieldset>
+    </body>
+</html>

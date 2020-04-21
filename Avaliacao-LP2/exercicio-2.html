@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta nome="viewport" content="width=device-width">
+    <title>Exercicio-2</title>
+    <link rel="stylesheet" type="text/css" href= "style.css"/>
+    </head>
+    <body>
+        <fieldset>
+        <h1>Calculadora de Média</h1>
+        <div>
+            <label for="primeiraNota">Insira a 1º nota do aluno:</label>
+            <input type="text" id="primeiraNota"/>   
+        </div>
+        
+        <div>
+            <label for="segundaNota">Insira a 2ª nota do aluno:</label>
+            <input type="text" id="segundaNota"/>   
+        </div>
+        
+        <div>
+            <label for="terceiraNota">Insira a 3ª nota do aluno:</label>
+            <input type="text" id="terceiraNota"/>   
+        </div>
+        
+        <div>
+            <label for="resultado">Resultado</label>
+            <input type="text" id="resultado"/>
+        </div><br>
+        <div>
+            
+            <button onclick="limpar()">Limpar</button>
+            <button onclick="resultado()">Resultado</button>
+        </div>
+    
+        <script>
+            function resultado(){
+                var n1 = +document.getElementById('primeiraNota').value;
+                var n2 = +document.getElementById('segundaNota').value;
+                var n3 = +document.getElementById('terceiraNota').value;
+                var resultado = document.getElementById('resultado');
+                resultado.value = (n1 + n2 + n3)/3;
+                
+            }
+            
+            function limpar(){
+                document.getElementById('resultado').value = '';
+                document.getElementById('primeiraNota').value = '';
+                document.getElementById('segundaNota').value = '';
+                document.getElementById('terceiraNota').value = '';
+            }
+        </script><hr>
+
+        
+        <input type="button" value="Tela Inicial" onClick="history.go(-1)"> 
+        
+        </fieldset>
+    </body>
+    </html>
