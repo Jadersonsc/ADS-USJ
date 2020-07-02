@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Clientes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    
+    <form>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="nome" maxlength="25"><b>PRIMEIRO NOME</b></label>
+            <input type="text" class="form-control" id="nome_id" placeholder="Nome" value="" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="sobrenome" maxlength="25"><b>SOBRENOME</b></label>
+            <input type="text" class="form-control" id="sobrenome_id" placeholder="Sobrenome" value="" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="nascimento"><b>NASCIMENTO</b></label>
+            <input type="date" class="form-control" id="nascimento_id" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="cidade"><b>CIDADE</b></label>
+            <input type="text" class="form-control" id="cidade_id" placeholder="Digite aqui sua cidade..." required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="estado"><b>ESTADO</b></label>
+            <select id="estado_id" name="estado" class="form-control">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cep"><b>CEP</b></label>
+            <input type="text" class="form-control" id="cep_id" placeholder="Ex: #####-###" maxlength="9" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check_id" required>
+            <label class="form-check-label" for="check_id">
+              <a href="termos_condicoes.html" target="blank"><b>TERMOS E CONDIÇÕES.</b></a>
+            </label>
+              
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit"><b>ENVIAR</b></button>
+      </form>
+    
+      <br>
+
+     <a href="index.html">INICIO</a>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+      
+</body>
+</html>
